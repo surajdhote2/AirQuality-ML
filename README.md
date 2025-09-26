@@ -13,7 +13,7 @@ This project predicts **CO levels (classification)** and **NOx levels (regressio
 - Matplotlib, Seaborn
 
 ## 📂 Project Structure
-
+```bash
 AirQuality-ML/
 │── data/             # dataset
     ├── AirQualityUCI.xlsx              # main training dataset
