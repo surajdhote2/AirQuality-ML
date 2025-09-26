@@ -15,15 +15,22 @@ This project predicts **CO levels (classification)** and **NOx levels (regressio
 ## 📂 Project Structure
 
 AirQuality-ML/
-│── data/ # dataset (not included)
-│── src/ # source code
-│ ├── preprocessing.py
-│ ├── classification.py
-│ ├── regression.py
-│ ├── evaluation.py
-│ └── train.py
-│── models/ # saved models
-│── outputs/ # plots, logs
+│── data/             # dataset
+    ├── AirQualityUCI.xlsx              # main training dataset
+    ├── Generalization_Dataset.xlsx     # test dataset
+|
+|── notebook/               # Jupyter notebook
+│   ├── AirQuality_MLP.ipynb
+|
+│── src/                    # Python script
+│   ├── classification_regression.py
+|
+│── outputs/            # plots, tables
+│   │── figures
+|   │── tables
+|
+|── .gitignore
+│── LICENSE
 │── requirements.txt # dependencies
 │── README.md # project documentation
 
@@ -31,29 +38,11 @@ AirQuality-ML/
 ## 🚀 Run Locally
 ```bash
 # Clone repo
-git clone https://github.com/YOUR_USERNAME/AirQuality-ML.git
+git clone https://github.com/surajdhote2/AirQuality-ML.git
 cd AirQuality-ML
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run classification
-python src/train.py --task classification
-
-# Run regression
-python src/train.py --task regression
-
-
-📊 Results
-
-Classification Accuracy: ~95%
-
-Regression RMSE: ~30
-
-🔮 Future Work
-
-Hyperparameter tuning with GridSearch
-
-Add Random Forest/XGBoost baselines
-
-Deploy model using Flask/Streamlit
+# Run
+python src/classification_regression.py
