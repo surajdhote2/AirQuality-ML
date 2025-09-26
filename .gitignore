@@ -1,0 +1,8 @@
+# Ignore datasets and models
+data/*
+models/*
+outputs/*
+
+# Ignore Python junk
+__pycache__/
+*.pyc
